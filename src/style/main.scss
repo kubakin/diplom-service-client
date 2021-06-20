@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+.nav {
+    display: flex;
+}
+
+body {
+    font-family: 'Orelega One';
+}
+
+.App {
+    background-color: $black;
+    width: 100%;
+}
+
+input,
+textarea {
+    outline: none;
+    border: none;
+}
+
+.content {
+    min-height: 600px;
+
+    p,
+    h1,span   {
+        color: $grey;
+    }
+
+    width: $contentWidth;
+}
+
+.content>div {
+    width: 100%;
+}
+
+.classicButton {
+    border: 1px solid $orange;
+    padding: 15px 100% 15px 10px;
+    background: url('../media/righ.png') no-repeat right;
+    color: $grey;
+}
+.shadow {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 1;
+    position: fixed;
+    overflow: visible;
+    left:0px;
+    top:0px;
+    width: 100%;
+    height: 100%
+}
+.off {
+    display: none;
+}

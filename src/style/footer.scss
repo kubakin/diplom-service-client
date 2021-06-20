@@ -1,0 +1,44 @@
+.Footer {
+    margin-top: 30px;
+    .contact-form {
+        .classicButton {
+            color: $black;
+        }
+        textarea,
+        input {
+            width: 300px;
+            background-color: $grey;
+            border: 1px solid $orange;
+            padding-left: 15px;
+
+        }
+
+        .topic {
+            border: none;
+            border-bottom: 1px solid $orange;
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+
+    }
+
+    background: $grey;
+    width: 100%;
+    padding: 30px;
+
+    &-content {
+        width: $contentWidth;
+        border-bottom: 1px solid $orange;
+
+    }
+
+    .logoBlock {
+        margin-bottom: 50px;
+    }
+
+    .getContanct {
+        width: 100%;
+    }
+}

@@ -1,0 +1,114 @@
+.Home {
+    a {
+        color: $grey;
+    }
+    .addSite {
+        color: blue;
+    }
+    .privateData {
+        p {
+            border-bottom: 1px solid $orange;
+
+        }
+
+        .edited {
+            input {
+                background: $grey;
+                color: $black;
+            }
+        }
+    }
+
+    input {
+        background: $black;
+    }
+
+    .siteOfProject {
+        .active {
+            color: greenyellow;
+        }
+
+        border-bottom: 1px solid $orange;
+        margin-bottom: 10px;
+    }
+}
+
+
+.Tariff {
+    .ant-card-body {
+        h1 {
+            color: $black;
+        }
+
+    }
+
+    .tariff {
+        width: 100%;
+    }
+
+    .someTariff {
+        border: 1px solid $orange;
+        height: 200px;
+        box-shadow: 0 0 20px rgba(1, 1, 1, 0.5);
+        border-radius: 10px;
+        padding: 0 10px 0 10px;
+
+        .name {
+            border-bottom: 1px solid $orange;
+        }
+    }
+
+    .ant-card {
+        background-color: $grey;
+        color: $black;
+
+        p {
+            color: $black;
+        }
+    }
+
+}
+
+.report {
+    .ant-card {
+        background-color: $black;
+        margin: 10px;
+        border: 1px solid $orange;
+        height: 250px;
+
+        p,
+        h1 {
+            color: $grey;
+        }
+    }
+}
+
+.Orders {
+
+    // a {
+    //     color: $grey;
+    // }
+    .cell {
+        text-align: center;
+        border-bottom: 1px solid $orange;
+    }
+
+    .addOrderBtn {
+        margin-left: auto;
+    }
+}
+
+.content .addOrder {
+    position: fixed;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    height: 400px;
+    background-color: $grey;
+    border: 1px solid $orange;
+    z-index: 2;
+    width: 400px;
+    // text-align: center;
+}

@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './style/index.scss'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import User from './redux/context';
+import Auth from './service/auth';
+import Service from './service/restService';
+const user = new Auth();
+const rest = new Service();
+const service = {
+  user,
+  rest
+}
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <User.Provider value={service}>
+        <App />
+      </User.Provider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
